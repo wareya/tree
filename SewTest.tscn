@@ -2,17 +2,17 @@
 
 [ext_resource path="res://SewTest.gd" type="Script" id=1]
 
-[node name="SewTest" type="Spatial"]
+[node name="SewTest" type="Node3D"]
 script = ExtResource( 1 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 7.45058e-09, -5.96046e-08, 3.72529e-09, 1, 0, 2.98023e-08, -1.49012e-08, 1, 0, 0, 0 )
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 7.45058e-09, -5.96046e-08, 3.72529e-09, 1, 0, 2.98023e-08, -1.49012e-08, 1, 0, 0, 0 )
 
-[node name="Spatial" type="Spatial" parent="."]
-transform = Transform( 0.882439, -0.26887, 0.386019, 0, 0.820571, 0.571545, -0.470427, -0.504353, 0.724104, 0, 0, 0 )
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D( 0.882439, -0.26887, 0.386019, 0, 0.820571, 0.571545, -0.470427, -0.504353, 0.724104, 0, 0, 0 )
 
-[node name="Camera" type="Camera" parent="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+[node name="Camera3D" type="Camera3D" parent="Node3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 0.707107, 0.353553, -0.612372, 0, 0.866025, 0.5, 0.707107, -0.353553, 0.612372, -2, 3, 2 )
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( 0.707107, 0.353553, -0.612372, 0, 0.866025, 0.5, 0.707107, -0.353553, 0.612372, -2, 3, 2 )
